@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
+.container{
+background-color: black;
+/* height: 606px; */
+display: grid;
+grid-template-columns: 50px 60% 31%;
+grid-template-rows: 60px 50px 150px 300px 1fr;
+row-gap: 20px;
+column-gap: 25px;
+}
+.item{
+    background-color: hsl(240deg 11.11% 14.12%);
+    border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+.footer{
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: black;
+}
+.row{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding:10px;
+}
+.row2{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size:10px;
+    color:white;
+    padding-left:20px;
+    padding-top:10px;
+}
+.search{
+    width: 50%;
+    float:left;
+
+}
+.profile{
+    width: 50%;
+    float:left; 
+    text-align:right;
+}
+::placeholder{
+    color: white;
+    /* opacity: 1; */
+    padding-left: 10px;
+}
+.icons{
+    border-radius: 50%;
+    background-color: rgb(68 69 74);
+    padding:10px;
+    margin-right:5px;
+    color:white;
+}
+.pic{
+    margin-left:10px;
+    padding:0px;
+    width:37px;
+
+}
+.row3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+    row-gap: 5px;
+    background-color: black;
+}
+.icon {
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.order {
+    border-radius: 10px;
+    background-color: hsl(240deg 11.11% 14.12%);
+    padding: 12px 20px 12px 20px;
+    color: white;
+}
+.ordersText {
+    display: block;
+    font-size: 15px;
+}
+.odn{
+    display:inline-block;
+}
+.OrdersNum{
+    font-size: 30px;
+    display: inline-block;
+}
+.odarw{
+    padding-top:10px;
+}
+.odnarw{
+    float: right;
+}
+.upArr{
+    font-size: 25px;
+    color:hsl(144.92deg 100% 46.27%);
+}
+.basket{
+    background-color: rgb(36 50 105);
+    color:rgb(40 98 254);
+}
+.bag{
+    background-color: rgb(0 79 69);
+    color:rgb(0 202 146)
+}
+.bagx{
+    background-color: rgb(103 47 53);
+    color:rgb(255 82 82);
+}
+.dollar{
+    background-color: rgb(94 36 68);
+    color:rgb(214 39 135);
+}
+.menues{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    background-color: rgb(32 32 40);;
+    padding-top:20px;
+    color:hsl(240deg 1.16% 66.27%);
+}
+.menu{
+    font-size: 25px;
+    place-self: center;
+}
+.logo{
+    color:hsl(219.75deg 98.74% 68.82%);
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.home{
+    color:hsl(219.75deg 98.74% 68.82%);
+}
+table, th, td {
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+    color:hsl(255deg 10.53% 92.55%);
+    text-align: left;
+    width: 775px;
+}
+.RecentOrders{
+    color:white;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.profilePic{
+    border-radius: 10px;
+    font-size:20px;
+    padding:10px;
+}
+.row4{
+    padding:10px;
+}
+.netProfit{
+    float:left;
+    width:50%;
+    color:white;
+}
+.upArrow{
+    font-size: 25px;
+    color:hsl(144.92deg 100% 46.27%);
+    display: block;
+    float:left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circle{
+    float: right;
+    font-size: 100px;
+    padding-right:25px;
+    color:hsl(221.18deg 98.71% 69.61%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.goals{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding:20px;
 }
-
-.App-link {
-  color: #61dafb;
+.list{
+    align-self: center;
+    color:hsl(180deg 2.38% 83.53%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circleRight{
+    align-self: center;
+    justify-self: end;
+}
+.icn{
+    font-size: 40px;
+    padding:10px;
+    border-radius: 50%;
+    float:left;
+}
+.igoal{
+    color:hsl(22.35deg 100% 50%);
+    background-color:hsl(353.57deg 37.33% 29.41%);
+}
+.ifood{
+    color: hsl(221.51deg 76.84% 62.75%);
+    background-color: hsl(226.57deg 48.2% 27.25%);
+}
+.imenu{
+    color: hsl(196.44deg 100% 40.78%);
+    background-color: hsl(193.26deg 97.94% 19.02%);
+}
+.circleRight{
+    font-size: 30px;
+    background-color:hsl(180deg 2.38% 83.53%);
+    color: hsl(231.43deg 4.7% 29.22%);
+    border-radius: 50%;
+}
+.goalText{
+    display: inline-block;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.feedback{
+    padding:10px;
+    color:hsl(180deg 2.38% 83.53%);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 155px 1fr;
+    row-gap: 20px;
+    float:left;
+    height:371px;
+    overflow: overlay;
+}
+.stars{
+    color:hsl(49.25deg 100% 58.43%);
+    font-size: 20px;
+}
+.cName{
+    font-size: 20px;
+}
+.review{
+    font-size: 12px;
+}
+.custPic{
+    width:40px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.graph{
+    width: 94%;
+    padding-left: 12px;
 }
